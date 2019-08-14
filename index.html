@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Online MarketPlace</title>
+  </head>
+  <body>
+    <div class="container">
+    <h1>Welcome to our Online MarketPlace</h1>
+      <p>We currently have the following items in stock:</p>
+      <ul>
+        <li>Laptop Bags</li>
+        <li>Phone Chargers</li>
+        <li>Headphones</li>
+        <li>Phone Stands</li>
+        <li>Bluetooth Speakers</li>
+      </ul>
+
+    <form class="theform" action="index.html" method="post">
+      <label for= "purchase">Please enter the items for purchase:</label>
+      <input type="text" id="purchase">
+      <br>
+      <label for= "name">First and Last Name:</label>
+      <input type="text" id="name">
+      <br>
+      <label for= "address">Shipping Address:</label>
+      <input type="text" id="address">
+      <br>
+      <button type="submit" name="button" class="btn btn-danger">Submit</button>
+      <div class="modal" id="theModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="well">
+                <p>Thanks for your purchase!</p>
+                <p><strong>Your items:</strong> <span id="transaction"></span></p>
+                <p><strong>Contact Info:</strong> <span id="contactName"></span></p>
+                <p><strong>Shipping Address:</strong> <span id="shipping"></span></p>
+
+                <button type="button" class="class btn btn-info" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  </body>
+</html>
